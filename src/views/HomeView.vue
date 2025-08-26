@@ -15,6 +15,24 @@ const calculators: Calculator[] = [
     available: true
   },
   {
+    id: 'reserva-emergencia',
+    title: 'Reserva de Emergência',
+    description: 'Simule o valor ideal para uma boa reserva de emergência.',
+    route: '/reserva-emergencia',
+    icon: '🛡️',
+    gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+    available: true
+  },
+  {
+    id: 'pj-clt',
+    title: 'PJ vs CLT',
+    description: 'Compare os custos e benefícios entre trabalhar como PJ ou CLT no Brasil.',
+    route: '/pj-clt',
+    icon: '⚖️',
+    gradient: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+    available: true
+  },
+  {
     id: 'juros-compostos',
     title: 'Juros Compostos',
     description: 'Veja quantas vezes o seu dinheiro pode se multiplicar e trabalhar para você.',
@@ -48,15 +66,6 @@ const calculators: Calculator[] = [
     route: '/porcentagem',
     icon: '🔢',
     gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-    available: false
-  },
-  {
-    id: 'reserva-emergencia',
-    title: 'Reserva de Emergência',
-    description: 'Simule o valor ideal para uma boa reserva de emergência.',
-    route: '/reserva-emergencia',
-    icon: '🛡️',
-    gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
     available: false
   },
   {

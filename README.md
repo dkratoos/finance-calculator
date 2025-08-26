@@ -9,6 +9,7 @@ Uma aplicação moderna de calculadoras financeiras desenvolvida com Vue 3, Type
 A calculadora de financiamento imobiliário oferece uma análise completa para quem deseja adquirir um imóvel:
 
 #### 📝 Campos de Entrada:
+
 - **Valor do Imóvel**: Preço total do imóvel
 - **Valor de Entrada**: Quantia paga à vista
 - **Taxa de Juros Anual**: Taxa de juros aplicada (padrão: 9,5% a.a.)
@@ -17,6 +18,7 @@ A calculadora de financiamento imobiliário oferece uma análise completa para q
 - **Renda Familiar**: Para análise de comprometimento (opcional)
 
 #### 📊 Resultados Calculados:
+
 - **Valor da Parcela**: Primeira parcela (SAC) ou parcela fixa (PRICE)
 - **Renda Mínima Necessária**: Baseada em 30% de comprometimento da renda
 - **Valor Total Pago**: Soma de todas as parcelas + entrada
@@ -27,11 +29,13 @@ A calculadora de financiamento imobiliário oferece uma análise completa para q
 #### 🔢 Sistemas de Amortização:
 
 **SAC (Sistema de Amortização Constante)**
+
 - Parcelas decrescentes
 - Maior valor pago de juros no início
 - Menor valor total de juros
 
 **PRICE (Tabela Price)**
+
 - Parcelas fixas
 - Distribuição equilibrada de juros e amortização
 - Maior previsibilidade financeira
@@ -55,6 +59,7 @@ A calculadora de financiamento imobiliário oferece uma análise completa para q
 ## 📱 Responsividade
 
 A aplicação foi desenvolvida com mobile-first approach:
+
 - **Desktop**: Layout em grade com múltiplas colunas
 - **Tablet**: Adaptação automática dos cards
 - **Mobile**: Interface otimizada para telas pequenas
@@ -62,6 +67,7 @@ A aplicação foi desenvolvida com mobile-first approach:
 ## 🧮 Fórmulas Financeiras
 
 ### Sistema SAC
+
 ```
 Amortização = Valor Financiado ÷ Número de Parcelas
 Juros = Saldo Devedor × Taxa de Juros Mensal
@@ -69,6 +75,7 @@ Parcela = Amortização + Juros
 ```
 
 ### Sistema PRICE
+
 ```
 Parcela = PV × [(1+i)^n × i] ÷ [(1+i)^n - 1]
 
@@ -79,6 +86,7 @@ n = Número de parcelas
 ```
 
 ### Impostos e Taxas
+
 - **ITBI**: ~2% do valor do imóvel (varia por município)
 - **Cartório e Registro**: ~1% do valor do imóvel
 - **Taxas Diversas**: ~0,5% do valor do imóvel
@@ -97,20 +105,22 @@ n = Número de parcelas
 - 📊 Calculadora de Juros Simples
 - 💰 Calculadora do Primeiro Milhão
 - 🔢 Calculadora de Porcentagem
-- 🛡️ Calculadora de Reserva de Emergência
 - 📋 Calculadora de CDI
 
 ## 💡 Dicas Financeiras
 
 ### Renda Comprometida
+
 - **Até 30%**: Considerado seguro pelas instituições financeiras
 - **Acima de 30%**: Pode comprometer o orçamento familiar
 
 ### Entrada Recomendada
+
 - **Mínimo 20%**: Para melhores condições de financiamento
 - **Ideal 30-40%**: Reduz significativamente os juros pagos
 
 ### Escolha do Sistema
+
 - **SAC**: Melhor para quem tem renda mais alta no início
 - **PRICE**: Melhor para planejamento de longo prazo
 

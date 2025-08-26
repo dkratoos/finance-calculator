@@ -15,6 +15,16 @@ const router = createRouter({
       component: () => import('../views/FinanciamentoView.vue'),
     },
     {
+      path: '/reserva-emergencia',
+      name: 'reserva-emergencia',
+      component: () => import('../views/ReservaEmergenciaView.vue'),
+    },
+    {
+      path: '/pj-clt',
+      name: 'pj-clt',
+      component: () => import('../views/PjCltView.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),

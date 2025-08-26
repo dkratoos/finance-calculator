@@ -32,9 +32,9 @@ import { RouterView, RouterLink } from 'vue-router'
               <h4>Calculadoras</h4>
               <ul>
                 <li><RouterLink to="/financiamento">Financiamento Imobiliário</RouterLink></li>
-                <li><span class="coming-soon">Juros Compostos</span></li>
+                <li><RouterLink to="/reserva-emergencia">Reserva de Emergência</RouterLink></li>
+                <li><RouterLink to="/pj-clt">PJ vs CLT</RouterLink></li>
                 <li><span class="coming-soon">Primeiro Milhão</span></li>
-                <li><span class="coming-soon">Reserva de Emergência</span></li>
               </ul>
             </div>
 
