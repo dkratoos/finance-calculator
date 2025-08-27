@@ -59,7 +59,7 @@ import { RouterView, RouterLink } from 'vue-router'
 
         <div class="footer-bottom">
           <div class="footer-bottom-content">
-            <p>&copy; 2024 FinanceCalc. Desenvolvido com Vue 3 + TypeScript</p>
+            <p>&copy; 2025 FinanceCalc. Desenvolvido com Vue 3 + TypeScript</p>
             <p class="disclaimer">
               <strong>Aviso:</strong> Esta ferramenta é apenas para simulação.
               Consulte sempre um especialista financeiro para decisões de investimento.
