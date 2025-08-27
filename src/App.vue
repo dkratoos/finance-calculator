@@ -13,10 +13,8 @@ import { RouterView, RouterLink } from 'vue-router'
       </div>
     </header>
 
-    <main class="main">
-      <div class="container">
-        <RouterView />
-      </div>
+    <main class="main-content">
+      <RouterView />
     </main>
 
     <footer class="footer">
@@ -34,7 +32,7 @@ import { RouterView, RouterLink } from 'vue-router'
                 <li><RouterLink to="/financiamento">Financiamento Imobiliário</RouterLink></li>
                 <li><RouterLink to="/reserva-emergencia">Reserva de Emergência</RouterLink></li>
                 <li><RouterLink to="/pj-clt">PJ vs CLT</RouterLink></li>
-                <li><span class="coming-soon">Primeiro Milhão</span></li>
+                <li><RouterLink to="/custo-funcionario">Custo Funcionário</RouterLink></li>
               </ul>
             </div>
 
@@ -88,12 +86,6 @@ body {
   line-height: 1.6;
 }
 
-#app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -135,11 +127,6 @@ body {
   font-size: 0.9rem;
   color: #a0a0a0;
   font-weight: 400;
-}
-
-.main {
-  flex: 1;
-  padding: 2rem 0;
 }
 
 /* Hero section padronizada */
