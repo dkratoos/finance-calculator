@@ -1,129 +1,79 @@
 # 📊 FinanceCalc - Calculadoras Financeiras
 
-Uma aplicação moderna de calculadoras financeiras desenvolvida com Vue 3, TypeScript e design responsivo inspirado nas melhores práticas de UX/UI.
+Uma plataforma moderna e completa de calculadoras financeiras desenvolvida com Vue 3, TypeScript e design responsivo. Todas as ferramentas seguem as regulamentações brasileiras e oferecem cálculos precisos para seu planejamento financeiro.
 
-## 🚀 Funcionalidades
+## 🧮 Calculadoras Disponíveis
 
-### 🏠 Calculadora de Financiamento Imobiliário
+### 🏠 Financiamento Imobiliário
 
-A calculadora de financiamento imobiliário oferece uma análise completa para quem deseja adquirir um imóvel:
+Simule financiamentos com sistemas SAC e PRICE, calcule renda mínima necessária e analise impostos de aquisição.
+**→ [Documentação Detalhada](./CALCULADORA_FINANCIAMENTO.md)**
 
-#### 📝 Campos de Entrada:
+### 👥 Custo de Funcionário
 
-- **Valor do Imóvel**: Preço total do imóvel
-- **Valor de Entrada**: Quantia paga à vista
-- **Taxa de Juros Anual**: Taxa de juros aplicada (padrão: 9,5% a.a.)
-- **Prazo**: Período do financiamento (10 a 35 anos)
-- **Sistema de Amortização**: SAC ou PRICE
-- **Renda Familiar**: Para análise de comprometimento (opcional)
+Calcule o custo total de um funcionário incluindo salário, encargos, benefícios e todos os custos trabalhistas.
+**→ [Documentação Detalhada](./CALCULADORA_CUSTO_FUNCIONARIO.md)**
 
-#### 📊 Resultados Calculados:
+### ⚖️ PJ vs CLT
 
-- **Valor da Parcela**: Primeira parcela (SAC) ou parcela fixa (PRICE)
-- **Renda Mínima Necessária**: Baseada em 30% de comprometimento da renda
-- **Valor Total Pago**: Soma de todas as parcelas + entrada
-- **Total de Juros**: Juros pagos durante todo o financiamento
-- **Impostos de Aquisição**: ITBI, cartório e taxas (~3,5% do valor do imóvel)
-- **Comprometimento da Renda**: Percentual da renda comprometido
+Compare a vantagem financeira entre trabalhar como PJ ou CLT com recomendações inteligentes baseadas em risco.
+**→ [Documentação Detalhada](./CALCULADORA_PJ_CLT.md)**
 
-#### 🔢 Sistemas de Amortização:
+### 🏦 Reserva de Emergência
 
-**SAC (Sistema de Amortização Constante)**
+Calcule sua meta de reserva, tempo para atingir o objetivo e analise sua situação financeira atual.
+**→ [Documentação Detalhada](./CALCULADORA_RESERVA_EMERGENCIA.md)**
 
-- Parcelas decrescentes
-- Maior valor pago de juros no início
-- Menor valor total de juros
+## ✨ Características
 
-**PRICE (Tabela Price)**
+- 🎨 **Interface Moderna**: Dark theme profissional com gradientes e animações
+- 📱 **Totalmente Responsivo**: Funciona perfeitamente em mobile, tablet e desktop
+- 🇧🇷 **Padrão Brasileiro**: Formatação em Real (R$), regulamentações nacionais
+- ⚡ **Performance Otimizada**: Vue 3 com Composition API e TypeScript
+- 🧮 **Cálculos Precisos**: Fórmulas validadas seguindo padrões do mercado
+- 🔒 **Validações Inteligentes**: Feedback em tempo real e prevenção de erros
 
-- Parcelas fixas
-- Distribuição equilibrada de juros e amortização
-- Maior previsibilidade financeira
+## 🛠️ Tecnologias
 
-## 🎨 Design e UX
-
-- **Dark Theme**: Interface moderna com tema escuro
-- **Gradientes**: Uso de gradientes vibrantes para destacar elementos importantes
-- **Cards Interativos**: Efeitos hover e animações suaves
-- **Layout Responsivo**: Adaptação perfeita para mobile, tablet e desktop
-- **Formatação Brasileira**: Valores em Real (R$) e percentuais formatados
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Vue 3** - Framework JavaScript progressivo
+- **Vue 3** + **Composition API** - Framework reativo moderno
 - **TypeScript** - Tipagem estática para maior robustez
-- **Vue Router** - Roteamento SPA
-- **CSS3** - Estilização avançada com gradientes e animações
-- **ESLint** - Linting para qualidade de código
+- **Vue Router** - Navegação SPA fluida
+- **CSS3** - Estilização avançada com animações
+- **Composables** - Lógica reutilizável e testável
+- **ESLint** - Qualidade e padrão de código
 
-## 📱 Responsividade
+## 🚀 Como Começar
 
-A aplicação foi desenvolvida com mobile-first approach:
+1. **Navegue** pela página inicial para ver todas as calculadoras
+2. **Escolha** a ferramenta que precisa
+3. **Preencha** os dados solicitados
+4. **Clique** em calcular para ver os resultados detalhados
+5. **Consulte** a documentação específica para dicas e detalhes
 
-- **Desktop**: Layout em grade com múltiplas colunas
-- **Tablet**: Adaptação automática dos cards
-- **Mobile**: Interface otimizada para telas pequenas
+## 🎯 Público-Alvo
 
-## 🧮 Fórmulas Financeiras
+- **Pessoas físicas** planejando grandes decisões financeiras
+- **Empresários** calculando custos trabalhistas
+- **Profissionais RH** dimensionando orçamentos
+- **Estudantes** aprendendo sobre finanças brasileiras
+- **Contadores** validando cálculos complexos
 
-### Sistema SAC
+## 📋 Futuras Calculadoras
 
-```
-Amortização = Valor Financiado ÷ Número de Parcelas
-Juros = Saldo Devedor × Taxa de Juros Mensal
-Parcela = Amortização + Juros
-```
+- 📈 Juros Compostos e Investimentos
+- 💰 Simulador do Primeiro Milhão
+- 📊 Análise de CDI e Selic
+- 🏥 Planejamento de Aposentadoria
+- 🎓 Financiamento Estudantil
 
-### Sistema PRICE
+## 🤝 Contribuição
 
-```
-Parcela = PV × [(1+i)^n × i] ÷ [(1+i)^n - 1]
+Quer sugerir melhorias ou reportar bugs? Todas as contribuições são bem-vindas!
 
-Onde:
-PV = Valor Presente (valor financiado)
-i = Taxa de juros mensal
-n = Número de parcelas
-```
+## ⚠️ Aviso Legal
 
-### Impostos e Taxas
-
-- **ITBI**: ~2% do valor do imóvel (varia por município)
-- **Cartório e Registro**: ~1% do valor do imóvel
-- **Taxas Diversas**: ~0,5% do valor do imóvel
-
-## 🚀 Como Usar
-
-1. **Acesse a página inicial** para ver todas as calculadoras disponíveis
-2. **Clique em "Financiamento Imobiliário"** para acessar a calculadora
-3. **Preencha os dados** do imóvel e financiamento
-4. **Clique em "CALCULAR"** para ver os resultados
-5. **Analise os resultados** detalhados apresentados
-
-## 📋 Próximas Funcionalidades
-
-- 📈 Calculadora de Juros Compostos
-- 📊 Calculadora de Juros Simples
-- 💰 Calculadora do Primeiro Milhão
-- 🔢 Calculadora de Porcentagem
-- 📋 Calculadora de CDI
-
-## 💡 Dicas Financeiras
-
-### Renda Comprometida
-
-- **Até 30%**: Considerado seguro pelas instituições financeiras
-- **Acima de 30%**: Pode comprometer o orçamento familiar
-
-### Entrada Recomendada
-
-- **Mínimo 20%**: Para melhores condições de financiamento
-- **Ideal 30-40%**: Reduz significativamente os juros pagos
-
-### Escolha do Sistema
-
-- **SAC**: Melhor para quem tem renda mais alta no início
-- **PRICE**: Melhor para planejamento de longo prazo
+Esta ferramenta é apenas para simulação e fins educativos. Para decisões financeiras importantes, sempre consulte um profissional qualificado.
 
 ---
 
-Desenvolvido com 💛 usando Vue 3 + TypeScript
+**Desenvolvido com 💛 usando Vue 3 + TypeScript**

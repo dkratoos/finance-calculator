@@ -1,19 +1,21 @@
 # 🏠 Calculadora de Financiamento Imobiliário
 
-## 📋 Descrição
+## 🎯 **Visão Geral**
 
-Uma calculadora completa e moderna para simular financiamentos imobiliários no Brasil, desenvolvida com Vue 3 e TypeScript. A ferramenta oferece cálculos precisos baseados nas práticas e regulamentações do mercado financeiro brasileiro.
+Calculadora completa e moderna para simular financiamentos imobiliários no Brasil, oferecendo cálculos precisos baseados nas práticas e regulamentações do mercado financeiro brasileiro. Suporte aos sistemas SAC e PRICE com análise completa de viabilidade financeira.
 
 ## 🎯 Funcionalidades Principais
 
 ### 📊 Sistemas de Amortização Suportados
 
 **1. SAC (Sistema de Amortização Constante)**
+
 - ✅ Parcelas decrescentes
 - ✅ Maior economia de juros no longo prazo
 - ✅ Ideal para quem tem renda estável ou crescente
 
 **2. PRICE (Tabela Price)**
+
 - ✅ Parcelas fixas
 - ✅ Maior previsibilidade no orçamento
 - ✅ Ideal para planejamento de longo prazo
@@ -21,22 +23,27 @@ Uma calculadora completa e moderna para simular financiamentos imobiliários no 
 ### 💰 Cálculos Realizados
 
 1. **Valor da Parcela**
+
    - Primeira parcela (SAC) ou parcela fixa (PRICE)
    - Considerando juros compostos
 
 2. **Renda Mínima Necessária**
+
    - Baseado no limite de 30% de comprometimento da renda
    - Seguindo diretrizes do SFH (Sistema Financeiro da Habitação)
 
 3. **Valor Total do Investimento**
+
    - Soma do financiamento + entrada
    - Custo real do imóvel
 
 4. **Total de Juros Pagos**
+
    - Valor total de juros durante todo o financiamento
    - Comparação entre sistemas SAC e PRICE
 
 5. **Impostos e Taxas**
+
    - ITBI (Imposto sobre Transmissão de Bens Imóveis): ~2%
    - Custos de cartório e registro: ~1%
    - Taxas diversas: ~0,5%
@@ -51,6 +58,7 @@ Uma calculadora completa e moderna para simular financiamentos imobiliários no 
 ### 1. Preenchimento dos Dados
 
 **Dados Obrigatórios:**
+
 - **Valor do Imóvel**: Preço total do imóvel
 - **Valor de Entrada**: Quantia paga à vista (mínimo 20%)
 - **Taxa de Juros**: Taxa anual oferecida pelo banco
@@ -58,11 +66,13 @@ Uma calculadora completa e moderna para simular financiamentos imobiliários no 
 - **Sistema**: SAC ou PRICE
 
 **Dados Opcionais:**
+
 - **Renda Familiar**: Para análise de comprometimento
 
 ### 2. Validações Automáticas
 
 O sistema valida automaticamente:
+
 - ✅ Valor de entrada mínimo (20% do valor do imóvel)
 - ✅ Taxa de juros dentro dos limites (3% a 25% a.a.)
 - ✅ Prazo do financiamento (5 a 35 anos)
@@ -76,6 +86,7 @@ O sistema valida automaticamente:
 ## 📈 Fórmulas Utilizadas
 
 ### Sistema SAC
+
 ```
 Amortização = Valor Financiado ÷ Número de Parcelas
 Juros(n) = Saldo Devedor(n-1) × Taxa Mensal
@@ -84,6 +95,7 @@ Saldo Devedor(n) = Saldo Devedor(n-1) - Amortização
 ```
 
 ### Sistema PRICE
+
 ```
 PMT = PV × [i × (1+i)^n] ÷ [(1+i)^n - 1]
 
@@ -97,11 +109,13 @@ n = Número de parcelas
 ## 🏛️ Regulamentações Brasileiras
 
 ### Limites do SFH (Sistema Financeiro da Habitação)
+
 - **Valor máximo**: R$ 1.500.000,00 (2024)
 - **Renda máxima**: R$ 7.000,00 (para subsídios)
 - **Comprometimento máximo**: 30% da renda bruta familiar
 
 ### Taxas de Referência
+
 - **Selic**: Taxa básica de juros (referência)
 - **TR**: Taxa Referencial (indexador comum)
 - **IPCA**: Índice de inflação (alguns financiamentos)
@@ -109,18 +123,22 @@ n = Número de parcelas
 ## 💡 Dicas Importantes
 
 ### Para o Comprador
+
 1. **Entrada maior = menos juros**: Cada R$ 1.000 a mais na entrada economiza muito em juros
 2. **Compare sistemas**: SAC vs PRICE têm impactos diferentes no orçamento
 3. **Reserve para custos extras**: ~10% do valor do imóvel para taxas e mobília
 4. **Negocie a taxa**: Compare ofertas de diferentes bancos
 
 ### Para Escolha do Sistema
+
 **Escolha SAC se:**
+
 - Sua renda tende a crescer
 - Quer pagar menos juros no total
 - Pode comprometer mais renda no início
 
 **Escolha PRICE se:**
+
 - Prefere parcelas fixas
 - Precisa de previsibilidade no orçamento
 - Renda é estável
@@ -128,28 +146,32 @@ n = Número de parcelas
 ## 🔍 Exemplos Práticos
 
 ### Exemplo 1: Apartamento R$ 500.000
+
 - **Entrada**: R$ 100.000 (20%)
 - **Financiamento**: R$ 400.000
 - **Taxa**: 9,5% a.a.
 - **Prazo**: 30 anos
 
 **Resultado SAC:**
+
 - Primeira parcela: ~R$ 4.278
 - Total de juros: ~R$ 571.000
 - Renda mínima: ~R$ 14.260
 
 **Resultado PRICE:**
+
 - Parcela fixa: ~R$ 3.697
 - Total de juros: ~R$ 731.000
 - Renda mínima: ~R$ 12.323
 
 ### Comparação de Sistemas
-| Aspecto | SAC | PRICE |
-|---------|-----|-------|
-| Parcelas | Decrescentes | Fixas |
-| Primeira parcela | Maior | Menor |
-| Total de juros | Menor | Maior |
-| Previsibilidade | Menor | Maior |
+
+| Aspecto          | SAC          | PRICE |
+| ---------------- | ------------ | ----- |
+| Parcelas         | Decrescentes | Fixas |
+| Primeira parcela | Maior        | Menor |
+| Total de juros   | Menor        | Maior |
+| Previsibilidade  | Menor        | Maior |
 
 ## 🎨 Recursos Visuais
 
