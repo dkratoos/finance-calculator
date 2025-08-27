@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import('../views/PjCltView.vue'),
     },
     {
+      path: '/custo-funcionario',
+      name: 'custo-funcionario',
+      component: () => import('../views/CustoFuncionarioView.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),

@@ -33,6 +33,15 @@ const calculators: Calculator[] = [
     available: true
   },
   {
+    id: 'custo-funcionario',
+    title: 'Custo de Funcionário',
+    description: 'Calcule o custo total de um funcionário para o empregador, incluindo salário, encargos e benefícios.',
+    route: '/custo-funcionario',
+    icon: '👥',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    available: true
+  },
+  {
     id: 'juros-compostos',
     title: 'Juros Compostos',
     description: 'Veja quantas vezes o seu dinheiro pode se multiplicar e trabalhar para você.',
